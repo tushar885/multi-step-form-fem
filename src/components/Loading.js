@@ -2,7 +2,7 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="w-full sm:grow shadow-md rounded-lg bg-gray-100 px-4 py-6"></div>
+    <div className="shimmerContainer w-full sm:grow shadow-md rounded-lg  overflow-hidden px-4 py-6 h-[400px] relative  sm:w-11/12 lg:w-4/5"></div>
   );
 };
 

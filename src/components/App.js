@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <AppContext.Provider value={{ step, setStep }}>
-      <div className="font-ubuntu  h-full w-full relative sm:flex  sm:shadow-md sm:max-w-5xl mx-auto sm:p-4 max-h-[700px]">
+      <div className="font-ubuntu w-full h-full relative sm:flex  sm:shadow-md sm:max-w-5xl mx-auto sm:p-4 max-h-[700px]">
         <Background_img />
         <MainBody />
       </div>
