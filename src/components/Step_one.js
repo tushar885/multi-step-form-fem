@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { ErrorMessage, Field, Formik, Form } from "formik";
 import validateStep_one from "../utils/validations/validateStep_one";
-import Step_oneContext from "../utils/context/Step_oneContext";
-import AppContext from "../utils/context/AppContext";
+// import Step_oneContext from "../utils/context/Step_oneContext";
+// import AppContext from "../utils/context/AppContext";
 import { formatNumber } from "../utils/helper";
+import { Step_oneContext, AppContext } from "../utils/combine";
 
 const Step_one = () => {
   const { step, setStep } = useContext(AppContext);

@@ -1,8 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Formik, Field, ErrorMessage, Form } from "formik";
-import AppContext from "../utils/context/AppContext";
-import PlanTypeContext from "../utils/context/PlanTypeContext";
-import Step_threeContext from "../utils/context/Step_threeContext";
+// import AppContext from "../utils/context/AppContext";
+// import PlanTypeContext from "../utils/context/PlanTypeContext";
+// import Step_threeContext from "../utils/context/Step_threeContext";
+import {
+  PlanTypeContext,
+  Step_threeContext,
+  AppContext,
+} from "../utils/combine";
 
 const Step_three = () => {
   const { step, setStep } = useContext(AppContext);

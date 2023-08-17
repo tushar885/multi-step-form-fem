@@ -1,9 +1,4 @@
 import React, { useContext, lazy, Suspense } from "react";
-// import Step_one from "./Step_one";
-// import Step_two from "./Step_two";
-// import Step_three from "./Step_three";
-// import Step_five from "./Step_five";
-// import Step_four from "./Step_four";
 import AppContext from "../utils/context/AppContext";
 import Loading from "./Loading";
 

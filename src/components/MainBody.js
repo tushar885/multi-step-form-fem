@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import FormSteps from "./FormSteps";
 import FormContainer from "./FormContainer";
-import Step_oneContext from "../utils/context/Step_oneContext";
-import PlanTypeContext from "../utils/context/PlanTypeContext";
-import Step_twoContext from "../utils/context/Step_twoContext";
-import Step_threeContext from "../utils/context/Step_threeContext";
+// import Step_oneContext from "../utils/context/Step_oneContext";
+// import PlanTypeContext from "../utils/context/PlanTypeContext";
+// import Step_twoContext from "../utils/context/Step_twoContext";
+// import Step_threeContext from "../utils/context/Step_threeContext";
+import {
+  Step_oneContext,
+  PlanTypeContext,
+  Step_twoContext,
+  Step_threeContext,
+} from "../utils/combine";
 
 const MainBody = () => {
   const [step_one_status, set_step_one] = useState({

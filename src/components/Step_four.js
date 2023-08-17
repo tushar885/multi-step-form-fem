@@ -1,8 +1,14 @@
 import React, { useContext, useState } from "react";
-import Step_twoContext from "../utils/context/Step_twoContext";
-import Step_threeContext from "../utils/context/Step_threeContext";
-import PlanTypeContext from "../utils/context/PlanTypeContext";
-import AppContext from "../utils/context/AppContext";
+// import Step_twoContext from "../utils/context/Step_twoContext";
+// import Step_threeContext from "../utils/context/Step_threeContext";
+// import PlanTypeContext from "../utils/context/PlanTypeContext";
+// import AppContext from "../utils/context/AppContext";
+import {
+  PlanTypeContext,
+  Step_twoContext,
+  Step_threeContext,
+  AppContext,
+} from "../utils/combine";
 import { pricing } from "../utils/constants";
 import { total, renderAddons } from "../utils/helper";
 

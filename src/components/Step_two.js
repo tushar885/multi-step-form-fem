@@ -3,9 +3,10 @@ import PlanWrapper from "./PlanWrapper";
 import arcade_icon from "../../assets/images/icon-arcade.svg";
 import advanced_icon from "../../assets/images/icon-advanced.svg";
 import pro_icon from "../../assets/images/icon-pro.svg";
-import AppContext from "../utils/context/AppContext";
-import PlanTypeContext from "../utils/context/PlanTypeContext";
-import Step_twoContext from "../utils/context/Step_twoContext";
+// import AppContext from "../utils/context/AppContext";
+// import PlanTypeContext from "../utils/context/PlanTypeContext";
+// import Step_twoContext from "../utils/context/Step_twoContext";
+import { PlanTypeContext, Step_twoContext, AppContext } from "../utils/combine";
 
 const Step_two = () => {
   const { step, setStep } = useContext(AppContext);
@@ -54,9 +55,12 @@ const Step_two = () => {
       <div className="flex w-full justify-center items-center bg-gray-100 shadow py-4 rounded-lg">
         <span>Monthly</span>
         <div
-          className={`mx-4 rounded-xl w-14 h-5 relative bg-blue-900 flex items-center p-1 py-3 ${
+          className={`mx-4 rounded-xl w-14 h-5 relative bg-blue-900 flex items-center p-1 py-3 hover:cursor-pointer ${
             plan === "year" ? "justify-end" : "justify-start"
           } `}
+          onClick={(e) => {
+            plan === "month" ? setPlan("year") : setPlan("month");
+          }}
         >
           <div
             className={`relative h-4 w-4 rounded-full bg-white hover:cursor-pointer `}
